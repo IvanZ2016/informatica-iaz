@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,18 +58,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground selection:bg-primary selection:text-white flex flex-col min-h-screen`}
-      >
-        <Navbar />
-        <main className="flex-grow pt-16">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
-        <ChatWidget />
-      </body>
-    </html>
+   <html lang="es" className="dark scroll-smooth">
+  <body
+    className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground selection:bg-primary selection:text-white flex flex-col min-h-screen`}
+  >
+    <Navbar />
+    <main className="flex-grow pt-16">
+      {children}
+    </main>
+    <Footer />
+    <WhatsAppButton />
+    <ChatWidget />
+
+    <Analytics />
+  </body>
+</html>
   );
 }
