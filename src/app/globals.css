@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* High-tech Palette */
+  --background: #020617; /* Slate 950 */
+  --foreground: #f8fafc; /* Slate 50 */
+  
+  --primary: #3b82f6; /* Blue 500 */
+  --primary-glow: #3b82f6aa;
+  
+  --secondary: #22c55e; /* Green 500 (Power On) */
+  --secondary-glow: #22c55eaa;
+  
+  --accent: #00d4ff; /* Cyan / Electric Blue */
+  
+  --card: #0f172a; /* Slate 900 */
+  --card-border: #1e293b; /* Slate 800 */
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 1; box-shadow: 0 0 20px var(--primary-glow); }
+    50% { opacity: 0.7; box-shadow: 0 0 10px var(--primary-glow); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom Utilities */
+.text-glow {
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 10px var(--secondary-glow);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* Prevent horizontal scroll from stylized elements */
 }
