@@ -114,7 +114,7 @@ export default function Home() {
                 Estamos disponibles para atender tus consultas a través de nuestros canales digitales.
               </p>
 
-              <Link href="https://wa.me/YOUR_NUMBER" target="_blank" className="block">
+              <Link href="https://wa.me/5491159383308" target="_blank" className="block">
                 <Button size="lg" className="w-full gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-[0_0_15px_rgba(37,211,102,0.4)] hover:shadow-[0_0_25px_rgba(37,211,102,0.6)] border-transparent">
                   <MessageCircle className="w-6 h-6" />
                   Chat en WhatsApp

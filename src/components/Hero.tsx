@@ -29,7 +29,7 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Link href="https://wa.me/YOUR_NUMBER" target="_blank">
+                    <Link href="https://wa.me/5491159383308" target="_blank">
                         <Button size="lg" className="w-full sm:w-auto gap-2 group">
                             <MessageCircle className="w-5 h-5" />
                             Contáctanos por WhatsApp

@@ -21,7 +21,7 @@ export default function WhatsAppButton() {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
-    const phoneNumber = "5491100000000"; // Replace with real number
+    const phoneNumber = "5491159383308"; // Replace with real number
     const message = encodeURIComponent("Hola, quiero consultar por servicios informáticos");
 
     return (

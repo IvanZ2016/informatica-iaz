@@ -17,7 +17,7 @@ const slides = [
         image: "/images/software a medida.jpg",
         color: "from-blue-500/20 to-cyan-500/20",
         borderColor: "border-cyan-500/50",
-        buttonLink: "https://wa.me/YOUR_NUMBER?text=Hola,%20me%20interesa%20un%20software%20a%20medida",
+        buttonLink: "https://wa.me/5491159383308?text=Hola,%20me%20interesa%20un%20software%20a%20medida",
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ const slides = [
         image: "/images/desarrolo web.png",
         color: "from-purple-500/20 to-pink-500/20",
         borderColor: "border-pink-500/50",
-        buttonLink: "https://wa.me/YOUR_NUMBER?text=Hola,%20quisiera%20una%20página%20web",
+        buttonLink: "https://wa.me/5491159383308?text=Hola,%20quisiera%20una%20página%20web",
     },
     {
         id: 3,
@@ -39,7 +39,7 @@ const slides = [
         image: "/images/soporte it.png",
         color: "from-green-500/20 to-emerald-500/20",
         borderColor: "border-green-500/50",
-        buttonLink: "https://wa.me/YOUR_NUMBER?text=Hola,%20necesito%20soporte%20técnico",
+        buttonLink: "https://wa.me/5491159383308?text=Hola,%20necesito%20soporte%20técnico",
     },
 ];
 
