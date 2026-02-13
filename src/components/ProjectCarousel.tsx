@@ -18,6 +18,7 @@ const slides = [
         color: "from-blue-500/20 to-cyan-500/20",
         borderColor: "border-cyan-500/50",
         buttonLink: "https://wa.me/5491159383308?text=Hola,%20me%20interesa%20un%20software%20a%20medida",
+        pageLink: "/servicios/software-a-medida"
     },
     {
         id: 2,
@@ -29,6 +30,7 @@ const slides = [
         color: "from-purple-500/20 to-pink-500/20",
         borderColor: "border-pink-500/50",
         buttonLink: "https://wa.me/5491159383308?text=Hola,%20quisiera%20una%20página%20web",
+        pageLink: "/servicios/desarrollo-web"
     },
     {
         id: 3,
@@ -115,12 +117,23 @@ export default function ProjectCarousel() {
                                             ))}
                                         </ul>
 
-                                        <Link href={slide.buttonLink} target="_blank">
-                                            <Button className="w-full md:w-auto gap-2 group/btn">
-                                                Consultar ahora
-                                                <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                                            </Button>
-                                        </Link>
+                                        {/* Dynamic Button Rendering */}
+                                        {/* @ts-ignore - checking for pageLink property */}
+                                        {slide.pageLink ? (
+                                            <Link href={slide.pageLink} passHref>
+                                                <Button className="w-full md:w-auto gap-2 group/btn">
+                                                    Ver más
+                                                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                                                </Button>
+                                            </Link>
+                                        ) : (
+                                            <Link href={slide.buttonLink} target="_blank">
+                                                <Button className="w-full md:w-auto gap-2 group/btn">
+                                                    Consultar ahora
+                                                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                                                </Button>
+                                            </Link>
+                                        )}
                                     </div>
                                 </div>
                             </div>
