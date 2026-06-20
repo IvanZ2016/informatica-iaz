@@ -4,10 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ChatWidget from "@/components/ChatWidget";
-import "./globals.css";
+import { Toaster } from "react-hot-toast";
 import { Analytics } from '@vercel/analytics/react';
-
-
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,21 +20,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Informática IAZ | Soluciones Informáticas",
+    default: "Informática IAZ | Desarrollo Web y Soporte Técnico en [CIUDAD]",
     template: "%s | Informática IAZ",
   },
-  description: "Servicios integrales de informática: Software a medida, desarrollo web y soporte técnico.",
-  metadataBase: new URL("https://informaticaiaz.com"), // Replace with actual domain later
+  description: "Especialistas en desarrollo de sistemas a medida, páginas web profesionales y soporte técnico IT para empresas y pymes en [CIUDAD], [PROVINCIA]. Incrementa la productividad de tu negocio hoy.",
+  metadataBase: new URL("https://informaticaiaz.com"),
+  keywords: ["soporte técnico en [CIUDAD]", "desarrollo web en [CIUDAD]", "sistemas de gestión", "mantenimiento informático", "software a medida para pymes"],
   openGraph: {
-    title: "Informática IAZ | Soluciones Informáticas",
-    description: "Servicios integrales de informática: Software a medida, desarrollo web y soporte técnico.",
+    title: "Informática IAZ | Transformación Digital y Soporte Técnico",
+    description: "Impulsa tu negocio con sistemas de gestión a medida y diseño web premium. Soporte técnico rápido y confiable en [CIUDAD].",
     url: "https://informaticaiaz.com",
     siteName: "Informática IAZ",
     images: [
       {
-        url: "/logo.png", // Assuming logo.png is suitable for OG
+        url: "/logo.png",
         width: 800,
         height: 600,
+        alt: "Informática IAZ - Soluciones Tecnológicas",
       },
     ],
     locale: "es_AR",
@@ -43,9 +44,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Informática IAZ",
-    description: "Soluciones tecnológicas integrales.",
+    title: "Informática IAZ | Expertos en Tecnología",
+    description: "Sistemas a medida, páginas web de alto impacto y soporte técnico profesional.",
     images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: "/logo.png",
@@ -69,7 +81,23 @@ export default function RootLayout({
     <Footer />
     <WhatsAppButton />
     <ChatWidget />
-
+    
+    <Toaster 
+      position="bottom-center"
+      toastOptions={{
+        style: {
+          background: '#0f172a',
+          color: '#fff',
+          border: '1px solid #1e293b',
+        },
+        success: {
+          iconTheme: {
+            primary: '#22c55e',
+            secondary: '#fff',
+          },
+        },
+      }} 
+    />
     <Analytics />
   </body>
 </html>

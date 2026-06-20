@@ -12,32 +12,38 @@ export default function ServicesPage() {
         {
             title: "Desarrollo de Software",
             description: "Creación de aplicaciones a medida para optimizar los procesos de tu negocio. Software de gestión, CRMs y ERPs personalizados.",
-            icon: Code,
+            icon: <Code className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/servicios/sistemas-a-medida"
         },
         {
             title: "Diseño Web Profesional",
             description: "Sitios web modernos, responsivos y optimizados para SEO. Desde landing pages hasta e-commerce completos.",
-            icon: Layout,
+            icon: <Layout className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/servicios/desarrollo-web"
         },
         {
             title: "Soporte Técnico IT",
             description: "Mantenimiento preventivo y correctivo de equipos informáticos. Redes, hardware y software.",
-            icon: Shield,
-        },
-        {
-            title: "Desarrollo Móvil",
-            description: "Aplicaciones nativas e híbridas para iOS y Android. Lleva tu negocio al bolsillo de tus clientes.",
-            icon: Smartphone,
+            icon: <Shield className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/servicios/soporte-tecnico"
         },
         {
             title: "Infraestructura & Redes",
             description: "Diseño e implementación de redes corporativas. Servidores, cableado estructurado y seguridad perimetral.",
-            icon: Server,
+            icon: <Server className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/servicios/redes-y-servidores"
+        },
+        {
+            title: "Desarrollo Móvil",
+            description: "Aplicaciones nativas e híbridas para iOS y Android. Lleva tu negocio al bolsillo de tus clientes.",
+            icon: <Smartphone className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/contact"
         },
         {
             title: "Base de Datos & Cloud",
             description: "Gestión, migración y optimización de bases de datos. Soluciones en la nube (AWS, Google Cloud, Azure).",
-            icon: Database,
+            icon: <Database className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
+            href: "/contact"
         },
     ];
 

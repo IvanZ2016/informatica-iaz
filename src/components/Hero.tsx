@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Button from "./Button";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
@@ -13,35 +16,54 @@ export default function Hero() {
             </div>
 
             <div className="container relative z-10 px-4 md:px-6 text-center">
-                <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-8 animate-float">
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-8"
+                >
                     <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                    Innovación y Seguridad
-                </div>
+                    Soluciones Tecnológicas para Empresas
+                </motion.div>
 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-6 text-glow">
-                    Soluciones <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">Informáticas</span>
-                    <br /> Profesionales
-                </h1>
+                <motion.h1 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-6 text-glow"
+                >
+                    Tecnología que Multiplica <br className="hidden md:block"/>
+                    los <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">Resultados de tu Negocio</span>
+                </motion.h1>
 
-                <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl mb-10 leading-relaxed">
-                    Software a medida, páginas web de alto impacto y soporte técnico especializado.
-                    Transformamos tus ideas en realidad digital.
-                </p>
+                <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mx-auto max-w-[700px] text-gray-400 md:text-xl mb-10 leading-relaxed"
+                >
+                    Olvídate de las caídas de sistema y los procesos lentos. Desarrollamos software a medida, páginas web de alto impacto y brindamos soporte técnico premium para que tú te enfoques en vender.
+                </motion.p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Link href="https://wa.me/5491159383308" target="_blank">
-                        <Button size="lg" className="w-full sm:w-auto gap-2 group">
-                            <MessageCircle className="w-5 h-5" />
-                            Contáctanos por WhatsApp
-                        </Button>
-                    </Link>
-                    <Link href="/services">
-                        <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
-                            Ver Servicios
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                >
+                    <Link href="#contact">
+                        <Button size="lg" className="w-full sm:w-auto gap-2 group shadow-lg shadow-primary/25">
+                            Solicitar Asesoría Gratuita
                             <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </Link>
-                </div>
+                    <Link href="https://calendly.com/tu-usuario/reunion-30-min" target="_blank">
+                        <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 group border-white/20 hover:bg-white/5">
+                            <Calendar className="w-4 h-4" />
+                            Agendar una Reunión
+                        </Button>
+                    </Link>
+                </motion.div>
             </div>
         </section>
     );
