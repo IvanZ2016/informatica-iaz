@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Button from "@/components/Button";
+import WebExamplesShowcase from "@/components/WebExamplesShowcase";
 import Link from "next/link";
-import { Globe, CheckCircle, Zap, Layout } from "lucide-react";
+import { CheckCircle, Zap, Layout } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Desarrollo Web Profesional | Páginas que Venden | Informática IAZ",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 export default function DesarrolloWeb() {
   return (
     <div className="container mx-auto px-4 md:px-6 pt-32 pb-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Desarrollo Web de Alta Conversión
         </h1>
@@ -48,6 +49,8 @@ export default function DesarrolloWeb() {
             </ul>
           </div>
         </div>
+
+        <WebExamplesShowcase />
 
         <div className="bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">¿Quieres modernizar tu presencia digital?</h2>
