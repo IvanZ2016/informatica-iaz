@@ -22,19 +22,16 @@ export default function Navbar() {
         <nav className="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-background/80 backdrop-blur-md">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse group">
-                    <div className="relative flex items-center justify-center w-12 h-12 bg-transparent rounded-lg transition-transform group-hover:scale-105">
+                    <div className="relative flex items-center justify-center h-12 bg-transparent rounded-lg transition-transform group-hover:scale-105">
                         <Image
                             src="/logo.png"
                             alt="Informática IAZ Logo"
-                            width={48}
+                            width={180}
                             height={48}
-                            className="object-contain"
+                            className="object-contain w-auto h-full"
                             priority
                         />
                     </div>
-                    <span className="self-center text-2xl font-bold whitespace-nowrap text-white tracking-wide">
-                        Informática <span className="text-primary">IAZ</span>
-                    </span>
                 </Link>
                 <button
                     onClick={() => setIsOpen(!isOpen)}

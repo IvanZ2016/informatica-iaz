@@ -10,13 +10,10 @@ export default function Footer() {
                         <Image
                             src="/logo.png"
                             alt="Informática IAZ Logo"
-                            width={40}
+                            width={150}
                             height={40}
-                            className="object-contain"
+                            className="object-contain w-auto h-10"
                         />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                            Informática <span className="text-primary">IAZ</span>
-                        </span>
                     </div>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
                         <li>
