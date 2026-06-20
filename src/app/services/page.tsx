@@ -37,13 +37,13 @@ export default function ServicesPage() {
             title: "Desarrollo Móvil",
             description: "Aplicaciones nativas e híbridas para iOS y Android. Lleva tu negocio al bolsillo de tus clientes.",
             icon: <Smartphone className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
-            href: "/contact"
+            href: "/servicios/desarrollo-movil"
         },
         {
             title: "Base de Datos & Cloud",
             description: "Gestión, migración y optimización de bases de datos. Soluciones en la nube (AWS, Google Cloud, Azure).",
             icon: <Database className="w-8 h-8 text-primary group-hover:text-white transition-colors" />,
-            href: "/contact"
+            href: "/servicios/base-de-datos-cloud"
         },
     ];
 
