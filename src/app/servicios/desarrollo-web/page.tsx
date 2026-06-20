@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Globe, CheckCircle, Zap, Layout } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Desarrollo Web Profesional en [CIUDAD] | Páginas que Venden",
+  title: "Desarrollo Web Profesional | Páginas que Venden | Informática IAZ",
   description: "Diseño y desarrollo web a medida. Landing pages, e-commerce y sitios corporativos ultra rápidos, optimizados para SEO y conversión.",
   openGraph: {
     title: "Desarrollo de Páginas Web Premium",
@@ -42,7 +42,7 @@ export default function DesarrolloWeb() {
             </h3>
             <ul className="space-y-3">
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-accent" /> Velocidad de carga extrema (Next.js/React).</li>
-              <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-accent" /> Arquitectura SEO nativa para dominar [CIUDAD].</li>
+              <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-accent" /> Arquitectura SEO nativa para posicionarte en Google.</li>
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-accent" /> Diseño UX/UI orientado a cerrar ventas (CRO).</li>
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-accent" /> Análisis de datos e integración con CRM.</li>
             </ul>

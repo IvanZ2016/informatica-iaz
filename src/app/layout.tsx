@@ -20,15 +20,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Informática IAZ | Desarrollo Web y Soporte Técnico en [CIUDAD]",
+    default: "Informática IAZ | Desarrollo Web y Soporte Técnico",
     template: "%s | Informática IAZ",
   },
-  description: "Especialistas en desarrollo de sistemas a medida, páginas web profesionales y soporte técnico IT para empresas y pymes en [CIUDAD], [PROVINCIA]. Incrementa la productividad de tu negocio hoy.",
+  description: "Especialistas en desarrollo de sistemas a medida, páginas web profesionales y soporte técnico IT para empresas y pymes. Incrementa la productividad de tu negocio hoy.",
   metadataBase: new URL("https://informaticaiaz.com"),
-  keywords: ["soporte técnico en [CIUDAD]", "desarrollo web en [CIUDAD]", "sistemas de gestión", "mantenimiento informático", "software a medida para pymes"],
+  keywords: ["soporte técnico", "desarrollo web", "sistemas de gestión", "mantenimiento informático", "software a medida para pymes"],
   openGraph: {
     title: "Informática IAZ | Transformación Digital y Soporte Técnico",
-    description: "Impulsa tu negocio con sistemas de gestión a medida y diseño web premium. Soporte técnico rápido y confiable en [CIUDAD].",
+    description: "Impulsa tu negocio con sistemas de gestión a medida y diseño web premium. Soporte técnico rápido y confiable.",
     url: "https://informaticaiaz.com",
     siteName: "Informática IAZ",
     images: [

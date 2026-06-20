@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Monitor, CheckCircle, Shield, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Soporte Técnico IT para Empresas en [CIUDAD]",
-  description: "Servicio de soporte técnico proactivo, mantenimiento de equipos y redes para empresas y pymes en [CIUDAD]. Resolvemos emergencias en menos de 24 horas.",
+  title: "Soporte Técnico IT para Empresas | Informática IAZ",
+  description: "Servicio de soporte técnico proactivo, mantenimiento de equipos y redes para empresas y pymes. Resolvemos emergencias en menos de 24 horas.",
   openGraph: {
     title: "Soporte Técnico Especializado | Informática IAZ",
     description: "Soporte preventivo y correctivo para que tu empresa nunca deje de operar.",
@@ -17,7 +17,7 @@ export default function SoporteTecnico() {
     <div className="container mx-auto px-4 md:px-6 py-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Soporte Técnico IT en <span className="text-primary">[CIUDAD]</span>
+          Soporte Técnico IT Profesional
         </h1>
         <p className="text-xl text-gray-400 mb-12">
           Garantizamos la continuidad operativa de tu negocio mediante mantenimiento preventivo, corrección rápida de fallos y seguridad de datos avanzada.
@@ -42,7 +42,7 @@ export default function SoporteTecnico() {
             </h3>
             <ul className="space-y-3">
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-primary" /> Diagnóstico y resolución remota inmediata.</li>
-              <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-primary" /> Soporte in-situ rápido en [CIUDAD].</li>
+              <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-primary" /> Soporte in-situ rápido y sin demoras.</li>
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-primary" /> Mantenimiento preventivo programado.</li>
               <li className="flex gap-2 text-gray-300"><CheckCircle className="w-5 h-5 text-primary" /> Monitoreo 24/7 de tus servidores críticos.</li>
             </ul>
