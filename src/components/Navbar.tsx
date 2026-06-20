@@ -22,12 +22,12 @@ export default function Navbar() {
         <nav className="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-background/80 backdrop-blur-md">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse group">
-                    <div className="relative flex items-center justify-center h-20 bg-transparent rounded-lg transition-transform group-hover:scale-105">
+                    <div className="relative flex items-center justify-center h-32 md:h-40 bg-transparent rounded-lg transition-transform group-hover:scale-105">
                         <Image
                             src="/logo.png"
                             alt="Informática IAZ Logo"
-                            width={300}
-                            height={80}
+                            width={600}
+                            height={160}
                             className="object-contain w-auto h-full"
                             priority
                         />
