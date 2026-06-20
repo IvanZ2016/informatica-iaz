@@ -7,13 +7,15 @@ export default function Footer() {
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <Image
-                            src="/logo.png"
-                            alt="Informática IAZ Logo"
-                            width={480}
-                            height={128}
-                            className="object-contain w-auto h-24 md:h-32"
-                        />
+                        <div className="relative w-48 md:w-64">
+                            <Image
+                                src="/logo.png"
+                                alt="Informática IAZ Logo"
+                                width={480}
+                                height={128}
+                                className="object-contain w-full h-auto"
+                            />
+                        </div>
                     </div>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
                         <li>
