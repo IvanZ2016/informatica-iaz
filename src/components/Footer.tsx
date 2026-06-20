@@ -10,9 +10,9 @@ export default function Footer() {
                         <Image
                             src="/logo.png"
                             alt="Informática IAZ Logo"
-                            width={150}
-                            height={40}
-                            className="object-contain w-auto h-10"
+                            width={240}
+                            height={64}
+                            className="object-contain w-auto h-16"
                         />
                     </div>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
