@@ -45,14 +45,60 @@ export default function TrustSection() {
                     })}
                 </div>
 
-                <div className="mt-16 text-center">
-                    <p className="text-gray-400 mb-6 font-medium">Tecnologías con las que escalamos negocios:</p>
-                    <div className="flex flex-wrap justify-center gap-8 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                        <span className="text-xl font-bold font-mono text-white">React.js</span>
-                        <span className="text-xl font-bold font-mono text-white">Next.js</span>
-                        <span className="text-xl font-bold font-mono text-white">Tailwind</span>
-                        <span className="text-xl font-bold font-mono text-white">Node.js</span>
-                        <span className="text-xl font-bold font-mono text-white">TypeScript</span>
+                <div className="mt-20">
+                    <div className="text-center mb-12">
+                        <h3 className="text-2xl font-bold text-white mb-4">Nuestro Stack Tecnológico</h3>
+                        <p className="text-gray-400">Herramientas y plataformas de primer nivel con las que construimos y escalamos tu negocio.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                        {/* Columna 1 */}
+                        <div className="bg-card/30 p-6 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+                            <h4 className="text-primary font-bold text-lg mb-6 flex items-center gap-2">
+                                <span className="w-8 h-px bg-primary/50"></span>
+                                Soporte e Infraestructura
+                            </h4>
+                            <ul className="space-y-3">
+                                {["Windows Server", "Linux", "Microsoft 365", "Google Workspace", "Proxmox VE", "VMware", "MikroTik", "Ubiquiti UniFi", "pfSense", "Docker"].map((tech) => (
+                                    <li key={tech} className="text-gray-300 flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-secondary/50"></div>
+                                        {tech}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Columna 2 */}
+                        <div className="bg-card/30 p-6 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+                            <h4 className="text-primary font-bold text-lg mb-6 flex items-center gap-2">
+                                <span className="w-8 h-px bg-primary/50"></span>
+                                Desarrollo Web
+                            </h4>
+                            <ul className="space-y-3">
+                                {["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js", "PHP", "MySQL", "PostgreSQL", "Vercel"].map((tech) => (
+                                    <li key={tech} className="text-gray-300 flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-secondary/50"></div>
+                                        {tech}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Columna 3 */}
+                        <div className="bg-card/30 p-6 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+                            <h4 className="text-primary font-bold text-lg mb-6 flex items-center gap-2">
+                                <span className="w-8 h-px bg-primary/50"></span>
+                                Sistemas y Automatización
+                            </h4>
+                            <ul className="space-y-3">
+                                {["Laravel", "PHP", "Python", "MySQL", "PostgreSQL", "Docker", "Git", "GitHub", "REST API", "Google Analytics", "Meta Pixel", "WhatsApp Business"].map((tech) => (
+                                    <li key={tech} className="text-gray-300 flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-secondary/50"></div>
+                                        {tech}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
