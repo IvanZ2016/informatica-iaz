@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Button from "./Button";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -57,12 +57,7 @@ export default function Hero() {
                             <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </Link>
-                    <Link href="https://calendly.com/tu-usuario/reunion-30-min" target="_blank">
-                        <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 group border-white/20 hover:bg-white/5">
-                            <Calendar className="w-4 h-4" />
-                            Agendar una Reunión
-                        </Button>
-                    </Link>
+
                 </motion.div>
             </div>
         </section>

@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import Button from "./Button";
-import { Send, Calendar } from "lucide-react";
+import { Send } from "lucide-react";
 import toast from "react-hot-toast";
-import Link from "next/link";
 
 export default function ContactForm() {
     const [loading, setLoading] = useState(false);
@@ -51,7 +50,7 @@ export default function ContactForm() {
                 Escríbenos
             </h3>
             <p className="text-gray-400 mb-6 text-sm">
-                O si prefieres, <Link href="https://calendly.com/tu-usuario/reunion-30-min" target="_blank" className="text-primary hover:underline font-medium">agenda una videollamada</Link> directamente con nuestro equipo técnico.
+                Completá el formulario y nuestro equipo te responderá a la brevedad.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -102,7 +101,7 @@ export default function ContactForm() {
                     />
                 </div>
 
-                <div className="pt-2 flex flex-col gap-3">
+                <div className="pt-2">
                     <Button
                         type="submit"
                         disabled={loading}
@@ -114,15 +113,6 @@ export default function ContactForm() {
                             </>
                         )}
                     </Button>
-                    <Link href="https://calendly.com/tu-usuario/reunion-30-min" target="_blank" className="w-full">
-                        <Button
-                            type="button"
-                            variant="outline"
-                            className="w-full gap-2 border-white/10 text-gray-300 hover:text-white"
-                        >
-                            Agendar Reunión en Calendly <Calendar className="w-4 h-4" />
-                        </Button>
-                    </Link>
                 </div>
             </form>
         </div>

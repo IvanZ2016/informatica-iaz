@@ -52,9 +52,9 @@ export default function SistemasAMedida() {
         <div className="bg-primary/10 border border-primary/20 rounded-2xl p-8 text-center">
           <Lock className="w-12 h-12 text-primary mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-white mb-4">¿Preparado para escalar?</h2>
-          <p className="text-gray-300 mb-6">Agenda una llamada de descubrimiento para entender los cuellos de botella de tu empresa y armar un plan de acción.</p>
-          <Link href="https://calendly.com/tu-usuario/reunion-30-min" target="_blank">
-            <Button size="lg" className="w-full sm:w-auto shadow-lg">Agendar Llamada de Diagnóstico</Button>
+          <p className="text-gray-300 mb-6">Contáctanos para entender los cuellos de botella de tu empresa y armar un plan de acción.</p>
+          <Link href="/contact">
+            <Button size="lg" className="w-full sm:w-auto shadow-lg">Solicitar Asesoría Gratuita</Button>
           </Link>
         </div>
       </div>
