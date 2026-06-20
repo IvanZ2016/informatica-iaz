@@ -15,7 +15,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
             </div>
 
-            <div className="container relative z-10 px-4 md:px-6 text-center">
+            <div className="container relative z-10 px-4 md:px-6 text-center pt-24 md:pt-32">
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

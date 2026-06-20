@@ -20,15 +20,15 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-background/80 backdrop-blur-md">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse group">
-                    <div className="relative flex items-center justify-start w-48 md:w-64 lg:w-72 bg-transparent transition-transform group-hover:scale-105">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+                <Link href="/" className="flex items-center group">
+                    <div className="relative flex items-center justify-start w-40 md:w-48 transition-transform">
                         <Image
                             src="/logo.png"
                             alt="Informática IAZ Logo"
-                            width={600}
-                            height={160}
-                            className="object-contain w-full h-auto"
+                            width={400}
+                            height={120}
+                            className="object-contain w-full h-auto scale-[1.3] md:scale-[1.6] origin-left drop-shadow-xl group-hover:scale-[1.35] md:group-hover:scale-[1.65] transition-transform duration-300"
                             priority
                         />
                     </div>
